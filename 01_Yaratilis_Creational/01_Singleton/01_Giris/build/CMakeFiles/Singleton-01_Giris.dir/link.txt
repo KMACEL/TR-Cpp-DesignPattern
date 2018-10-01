@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++11   CMakeFiles/Singleton-01_Giris.dir/src/main.cpp.o CMakeFiles/Singleton-01_Giris.dir/src/Mesaj.cpp.o  -o Singleton-01_Giris 
