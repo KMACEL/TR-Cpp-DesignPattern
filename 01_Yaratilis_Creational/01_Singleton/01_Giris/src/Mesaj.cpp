@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Mesaj.h" 
+#include "Mesaj.h"
 
 // INSTANCE değişkenine başlangıç değeri atıyoruz
 Mesaj *Mesaj::INSTANCE = 0;
 
-// Mesaj sınıfımızı kullanmak için oluşturduğumuz public türtedi method
+// Mesaj sınıfımızı kullanmak için oluşturduğumuz public türündeki method
 Mesaj *Mesaj::getInstance()
 {
   // Eğer INSTANCE değeri 0 ise yani hiç bu sınıf çağırılmamışsa,
@@ -13,12 +13,12 @@ Mesaj *Mesaj::getInstance()
   {
     INSTANCE = new Mesaj();
   }
-  // Eğer bu sınıf daha öncd oluşturulmuşsa, yani çağırılmışsa geriye 
-  // var olan "INSTANCE"yi döndürüyoruz 
+  // Eğer bu sınıf daha öncd oluşturulmuşsa, yani çağırılmışsa geriye
+  // var olan "INSTANCE"yi döndürüyoruz
   return INSTANCE;
 }
 
-// Constructor Methodumuz 
+// Constructor Methodumuz
 Mesaj::Mesaj()
 {
 }
@@ -29,7 +29,7 @@ void Mesaj::setMesaj(std::string mesaj)
   this->mesaj = mesaj;
 }
 
-// mesaj değişkeninden veri almaya yarayan method 
+// mesaj değişkeninden veri almaya yarayan method
 std::string Mesaj::getMesaj()
 {
   return this->mesaj;
