@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++11   CMakeFiles/Singleton-02_Guvenli.dir/src/main.cpp.o CMakeFiles/Singleton-02_Guvenli.dir/src/Mesaj.cpp.o  -o ../bin/Singleton-02_Guvenli 

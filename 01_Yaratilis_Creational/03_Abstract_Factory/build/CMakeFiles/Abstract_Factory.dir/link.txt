@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++11   CMakeFiles/Abstract_Factory.dir/src/main.cpp.o  -o ../bin/Abstract_Factory 
