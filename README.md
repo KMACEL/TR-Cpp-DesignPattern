@@ -40,13 +40,13 @@ Most of these design patterns are specifically concerned with communication betw
 * **Visitor** separates an algorithm from an object structure by moving the hierarchy of methods into one object.
 
 ## **Sistem Gereksinimleri**
-Bu örnekler Linux Mint 18.3 Slvia ve Ubuntu 18.04.1 LTS üzerinde test edilmiştir.
+Bu örnekler Linux Mint 18.3 Slvia ve Ubuntu 18.04.1 LTS işletim sistemlerinde test edilmiştir.
 
 ```bash
-sudo apt-get install git
-sudo apt-get install build-essential
-sudo apt-get install cmake
-sudo apt-get install g++
+sudo apt-get install git -y
+sudo apt-get install build-essential -y
+sudo apt-get install cmake -y
+sudo apt-get install g++ -y
 ```
 ## **Yükleme**
 ```bash
