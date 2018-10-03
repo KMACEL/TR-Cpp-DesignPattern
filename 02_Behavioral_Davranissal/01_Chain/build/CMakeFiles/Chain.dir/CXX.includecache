@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/src/main.cpp
+iostream
+-
+string
+-
+
