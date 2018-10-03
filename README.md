@@ -1,31 +1,18 @@
-## GOF
-
-
+# C++ ile Design Pattern (Tasarım Kalıpları (Örüntüleri))
 
 ## **Creational** (Yaratılış)
 
 Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin için nesneler yaratan kalıplardır. Bu, belirli bir durum için hangi nesnelerin yaratılması gerektiğine karar vermede programınıza daha fazla esneklik sağlar.
 
 * **Singleton** pattern,  bir sınıf için sadece bir nesne oluşturmayı sağlar.
-* **Factory method**  pattern creates objects without specifying the exact class to create.
-* **Abstract factory**  pattern groups object factories that have a common theme.
-* **Builder** pattern constructs complex objects by separating construction and representation.
-* **Prototype** pattern creates objects by cloning an existing object.
+* **Factory method** pattern, oluşturulacak tam sınıfı belirtmeden nesneleri oluşturur.
+* **Abstract factory**  pattern, ortak gruplar, ortak bir temaya sahip olan sınıfların yaratılış biçimini hedefler.
+* **Builder** pattern, karmaşık nesneler inşa eder.
+* **Prototype** pattern, mevcut bir nesneyi klonlayarak nesneler oluşturur.
 
-## **Structural**
-These concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
+## **Behavioral** (Davranışsal)
 
-* **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
-* **Bridge** decouples an abstraction from its implementation so that the two can vary independently.
-* **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
-* **Decorator** dynamically adds/overrides behaviour in an existing method of an object.
-* **Facade** provides a simplified interface to a large body of code.
-* **Flyweight** reduces the cost of creating and manipulating a large number of similar objects.
-* **Proxy** provides a placeholder for another object to control access, reduce cost, and reduce complexity.
-
-## **Behavioral**
-
-Most of these design patterns are specifically concerned with communication between objects.
+Bu tasarım desenlerinin çoğu, özellikle nesneler arasındaki iletişim ile ilgili yapılardır.
 
 * **Chain** of responsibility delegates commands to a chain of processing objects.
 * **Command** creates objects which encapsulate actions and parameters.
@@ -39,6 +26,17 @@ Most of these design patterns are specifically concerned with communication betw
 * **Template** method defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
 * **Visitor** separates an algorithm from an object structure by moving the hierarchy of methods into one object.
 
+## **Structural**
+These concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
+
+* **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
+* **Bridge** decouples an abstraction from its implementation so that the two can vary independently.
+* **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
+* **Decorator** dynamically adds/overrides behaviour in an existing method of an object.
+* **Facade** provides a simplified interface to a large body of code.
+* **Flyweight** reduces the cost of creating and manipulating a large number of similar objects.
+* **Proxy** provides a placeholder for another object to control access, reduce cost, and reduce complexity.
+
 ## **Sistem Gereksinimleri**
 Bu örnekler Linux Mint 18.3 Slvia ve Ubuntu 18.04.1 LTS işletim sistemlerinde test edilmiştir.
 
@@ -51,6 +49,20 @@ sudo apt-get install g++ -y
 ## **Yükleme**
 ```bash
 git clone https://github.com/KMACEL/TR-Cpp-DesignPattern.git
+```
+## **Çalıştırma**
+```bash
+cd <ornek_proje_yolu>/build
+cmake ..
+make
+./../bin/<proje_ismi>
+```
+
+```bash
+cd 01_Creational_Yaratilis/01_Singleton/01_Giris/build
+cmake ..
+make
+./../bin/Singleton-01_Giris
 ```
 
 ## **Kaynak**
@@ -67,3 +79,11 @@ git clone https://github.com/KMACEL/TR-Cpp-DesignPattern.git
 > https://en.wikibooks.org/wiki/C++_Programming/Code/Design_Patterns
 
 > http://simplestcodings.blogspot.com
+
+> https://goalkicker.com/ - C++ Notes for Professionals book
+
+> Design Patterns in Modern C++ - Dmitri Nesteruk
+
+> Design Patterns Explained Simply - Alexander Shvets
+
+> Modern C++ Design: Generic Programming and Design Patterns Applied - Andrei Alexandrescu
