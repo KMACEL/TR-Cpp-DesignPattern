@@ -1,4 +1,4 @@
-# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain
+# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

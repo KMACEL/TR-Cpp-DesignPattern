@@ -1,3 +1,0 @@
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles/Chain.dir
