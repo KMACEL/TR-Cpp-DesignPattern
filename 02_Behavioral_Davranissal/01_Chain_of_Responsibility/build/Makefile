@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain
+CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build
+CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Chain
+# Target rules for targets named ChainofResponsibility
 
 # Build rule for target.
-Chain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Chain
-.PHONY : Chain
+ChainofResponsibility: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ChainofResponsibility
+.PHONY : ChainofResponsibility
 
 # fast build rule for target.
-Chain/fast:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/build
-.PHONY : Chain/fast
+ChainofResponsibility/fast:
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/build
+.PHONY : ChainofResponsibility/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Chain"
+	@echo "... ChainofResponsibility"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

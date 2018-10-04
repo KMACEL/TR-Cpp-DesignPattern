@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.9)
 
 # VARIABLES
 set(AUTHOR_NAME "Mert Acel")
-set(PROJECT_NAME "Chain")
+set(PROJECT_NAME "ChainofResponsibility")
 
 # Project Information
-project (${PROJECT_NAME} VERSION 1.0.1 DESCRIPTION "Chain")
+project (${PROJECT_NAME} VERSION 1.0.1 DESCRIPTION "Chain of Responsibility")
 
 # Information
 message(STATUS "AUTHOR_NAME          : ${AUTHOR_NAME}")

@@ -1,5 +1,8 @@
 # C++ ile Design Pattern (Tasarım Kalıpları (Örüntüleri))
 
+## Not
+Bu projedeki örnekler, daha anlaşılabilir olması için Türkçe yazılmaya çalışılmıştır. Bazı kalıplar ise İngilizce olarak bırakılmıştır(get,set...). Bu kalıpları çevirmek, ileride proje geliştirme sırasında zorlanılacağını düşündüğümüz için bu şekilde kullanım gerçekleştirilmektedir. 
+
 ## **Creational** (Yaratılış)
 
 Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin için nesneler yaratan kalıplardır. Bu, belirli bir durum için hangi nesnelerin yaratılması gerektiğine karar vermede programınıza daha fazla esneklik sağlar.
@@ -14,7 +17,7 @@ Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin içi
 
 Bu tasarım desenlerinin çoğu, özellikle nesneler arasındaki iletişim ile ilgili yapılardır.
 
-* **Chain** of responsibility delegates commands to a chain of processing objects.
+* **Chain of Responsibility** delegates commands to a chain of processing objects.
 * **Command** creates objects which encapsulate actions and parameters.
 * **Interpreter** implements a specialized language.
 * **Iterator** accesses the elements of an object sequentially without exposing its underlying representation.

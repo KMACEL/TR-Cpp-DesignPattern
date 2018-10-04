@@ -59,45 +59,45 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain
+CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build
+CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/Chain.dir
+# Target rules for target CMakeFiles/ChainofResponsibility.dir
 
 # All Build rule for target.
-CMakeFiles/Chain.dir/all:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/depend
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles --progress-num=1,2 "Built target Chain"
-.PHONY : CMakeFiles/Chain.dir/all
+CMakeFiles/ChainofResponsibility.dir/all:
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/depend
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles --progress-num=1,2 "Built target ChainofResponsibility"
+.PHONY : CMakeFiles/ChainofResponsibility.dir/all
 
 # Include target in all.
-all: CMakeFiles/Chain.dir/all
+all: CMakeFiles/ChainofResponsibility.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Chain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Chain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Davranissal_Behavioral/01_Chain/build/CMakeFiles 0
-.PHONY : CMakeFiles/Chain.dir/rule
+CMakeFiles/ChainofResponsibility.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChainofResponsibility.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles 0
+.PHONY : CMakeFiles/ChainofResponsibility.dir/rule
 
 # Convenience name for target.
-Chain: CMakeFiles/Chain.dir/rule
+ChainofResponsibility: CMakeFiles/ChainofResponsibility.dir/rule
 
-.PHONY : Chain
-
-# clean rule for target.
-CMakeFiles/Chain.dir/clean:
-	$(MAKE) -f CMakeFiles/Chain.dir/build.make CMakeFiles/Chain.dir/clean
-.PHONY : CMakeFiles/Chain.dir/clean
+.PHONY : ChainofResponsibility
 
 # clean rule for target.
-clean: CMakeFiles/Chain.dir/clean
+CMakeFiles/ChainofResponsibility.dir/clean:
+	$(MAKE) -f CMakeFiles/ChainofResponsibility.dir/build.make CMakeFiles/ChainofResponsibility.dir/clean
+.PHONY : CMakeFiles/ChainofResponsibility.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ChainofResponsibility.dir/clean
 
 .PHONY : clean
 
