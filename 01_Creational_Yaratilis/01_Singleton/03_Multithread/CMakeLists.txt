@@ -14,7 +14,7 @@ message(STATUS "CMAKE_SOURCE_DIR     : ${CMAKE_SOURCE_DIR}")
 message(STATUS "CMAKE_SYSTEM         : ${CMAKE_SYSTEM}") 
 
 # Set g++ Parameter
-set(CMAKE_CXX_FLAGS "-O2 -Wall -Wextra -Werror -std=c++11")
+set(CMAKE_CXX_FLAGS "-O2 -Wall -Wextra -Werror -std=c++17")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 add_executable(${PROJECT_NAME} src/main.cpp src/Mesaj.cpp)

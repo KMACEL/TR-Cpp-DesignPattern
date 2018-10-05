@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/src/Mesaj.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build/CMakeFiles/Singleton-02_Guvenli.dir/src/Mesaj.cpp.o"
-  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/src/main.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build/CMakeFiles/Singleton-02_Guvenli.dir/src/main.cpp.o"
+  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/src/Mesaj.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build/CMakeFiles/Singleton-02_Guvenli.dir/src/Mesaj.cpp.o"
+  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/src/main.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build/CMakeFiles/Singleton-02_Guvenli.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

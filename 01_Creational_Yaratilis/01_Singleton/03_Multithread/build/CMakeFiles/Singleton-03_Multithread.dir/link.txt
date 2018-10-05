@@ -1,1 +1,1 @@
-/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++11   CMakeFiles/Singleton-03_Multithread.dir/src/main.cpp.o CMakeFiles/Singleton-03_Multithread.dir/src/Mesaj.cpp.o  -o ../bin/Singleton-03_Multithread 
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++17   CMakeFiles/Singleton-03_Multithread.dir/src/main.cpp.o CMakeFiles/Singleton-03_Multithread.dir/src/Mesaj.cpp.o  -o ../bin/Singleton-03_Multithread 

@@ -1,3 +1,3 @@
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/05_Prototype/build/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/05_Prototype/build/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/05_Prototype/build/CMakeFiles/Prototype.dir
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/05_Prototype/build/CMakeFiles/rebuild_cache.dir
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/05_Prototype/build/CMakeFiles/edit_cache.dir
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/05_Prototype/build/CMakeFiles/Prototype.dir

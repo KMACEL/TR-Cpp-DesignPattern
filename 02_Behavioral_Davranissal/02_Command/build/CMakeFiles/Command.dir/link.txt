@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++17   CMakeFiles/Command.dir/src/main.cpp.o  -o ../bin/Command 

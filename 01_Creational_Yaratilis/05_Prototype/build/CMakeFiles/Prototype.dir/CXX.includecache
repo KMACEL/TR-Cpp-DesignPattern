@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/05_Prototype/src/main.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/05_Prototype/src/main.cpp
 iostream
 -
 unordered_map
