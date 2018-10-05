@@ -1,4 +1,4 @@
-# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/04_Builder
+# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/04_Builder/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

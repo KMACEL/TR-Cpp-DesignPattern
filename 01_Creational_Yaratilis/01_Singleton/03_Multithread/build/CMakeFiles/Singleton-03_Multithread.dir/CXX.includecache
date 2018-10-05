@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/Mesaj.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/Mesaj.cpp
 iostream
 -
 mutex
 -
 Mesaj.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/Mesaj.h
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/Mesaj.h
 iostream
 -
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/main.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/main.cpp
 iostream
 -
 string
 -
 Mesaj.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/Mesaj.h
 

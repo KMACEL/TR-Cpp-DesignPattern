@@ -59,10 +59,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli
+CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build
+CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/Singleton-02_Guvenli.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creation
 CMakeFiles/Singleton-02_Guvenli.dir/all:
 	$(MAKE) -f CMakeFiles/Singleton-02_Guvenli.dir/build.make CMakeFiles/Singleton-02_Guvenli.dir/depend
 	$(MAKE) -f CMakeFiles/Singleton-02_Guvenli.dir/build.make CMakeFiles/Singleton-02_Guvenli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build/CMakeFiles --progress-num=1,2,3 "Built target Singleton-02_Guvenli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build/CMakeFiles --progress-num=1,2,3 "Built target Singleton-02_Guvenli"
 .PHONY : CMakeFiles/Singleton-02_Guvenli.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/Singleton-02_Guvenli.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Singleton-02_Guvenli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Singleton-02_Guvenli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/02_Guvenli/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/02_Guvenli/build/CMakeFiles 0
 .PHONY : CMakeFiles/Singleton-02_Guvenli.dir/rule
 
 # Convenience name for target.

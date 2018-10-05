@@ -1,4 +1,4 @@
-# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/01_Giris
+# Install script for directory: /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/01_Giris/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

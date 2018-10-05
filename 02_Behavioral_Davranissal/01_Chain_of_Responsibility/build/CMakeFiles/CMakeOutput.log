@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/mert.acel/MA/TR-Cpp-Desi
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ac016/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ac016.dir/build.make CMakeFiles/cmTC_ac016.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1a462/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a462.dir/build.make CMakeFiles/cmTC_1a462.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ac016.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ac016.dir/testCCompiler.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_ac016
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac016.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_ac016.dir/testCCompiler.c.o  -o cmTC_ac016 
+Building C object CMakeFiles/cmTC_1a462.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1a462.dir/testCCompiler.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_1a462
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a462.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_1a462.dir/testCCompiler.c.o  -o cmTC_1a462 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_81de4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_81de4.dir/build.make CMakeFiles/cmTC_81de4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fd2f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd2f1.dir/build.make CMakeFiles/cmTC_fd2f1.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_81de4
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81de4.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o  -o cmTC_81de4 
+Building C object CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_fd2f1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2f1.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o  -o cmTC_fd2f1 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81de4' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOWuV8e.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_81de4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd2f1' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMVFlEN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_fd2f1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_81de4/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_81de4.dir/build.make CMakeFiles/cmTC_81de4.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fd2f1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_fd2f1.dir/build.make CMakeFiles/cmTC_fd2f1.dir/build]
   ignore line: [make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_81de4]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81de4.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o  -o cmTC_81de4 ]
+  ignore line: [Building C object CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_fd2f1]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2f1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o  -o cmTC_fd2f1 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81de4' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOWuV8e.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_81de4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd2f1' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMVFlEN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_fd2f1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccOWuV8e.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMVFlEN.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_81de4] ==> ignore
+    arg [cmTC_fd2f1] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_81de4.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_fd2f1.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -150,14 +150,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_abf86/fast"
-/usr/bin/make -f CMakeFiles/cmTC_abf86.dir/build.make CMakeFiles/cmTC_abf86.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c93da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c93da.dir/build.make CMakeFiles/cmTC_c93da.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_abf86.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_abf86.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_abf86
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abf86.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_abf86.dir/feature_tests.c.o  -o cmTC_abf86 
+Building C object CMakeFiles/cmTC_c93da.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c93da.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c93da
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c93da.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_c93da.dir/feature_tests.c.o  -o cmTC_c93da 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -170,14 +170,14 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a74f9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a74f9.dir/build.make CMakeFiles/cmTC_a74f9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0bd6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0bd6a.dir/build.make CMakeFiles/cmTC_0bd6a.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a74f9.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_a74f9.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a74f9
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a74f9.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_a74f9.dir/feature_tests.c.o  -o cmTC_a74f9 
+Building C object CMakeFiles/cmTC_0bd6a.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_0bd6a.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0bd6a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bd6a.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0bd6a.dir/feature_tests.c.o  -o cmTC_0bd6a 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -190,14 +190,14 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fa94e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fa94e.dir/build.make CMakeFiles/cmTC_fa94e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fa87e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa87e.dir/build.make CMakeFiles/cmTC_fa87e.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa94e.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_fa94e.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_fa94e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa94e.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_fa94e.dir/feature_tests.c.o  -o cmTC_fa94e 
+Building C object CMakeFiles/cmTC_fa87e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_fa87e.dir/feature_tests.c.o   -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fa87e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa87e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_fa87e.dir/feature_tests.c.o  -o cmTC_fa87e 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -208,28 +208,28 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dc785/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dc785.dir/build.make CMakeFiles/cmTC_dc785.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0cca3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0cca3.dir/build.make CMakeFiles/cmTC_0cca3.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dc785.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_dc785.dir/testCXXCompiler.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_dc785
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc785.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_dc785.dir/testCXXCompiler.cxx.o  -o cmTC_dc785 
+Building CXX object CMakeFiles/cmTC_0cca3.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_0cca3.dir/testCXXCompiler.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_0cca3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cca3.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_0cca3.dir/testCXXCompiler.cxx.o  -o cmTC_0cca3 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2e310/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2e310.dir/build.make CMakeFiles/cmTC_2e310.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9bc59/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9bc59.dir/build.make CMakeFiles/cmTC_9bc59.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_2e310
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e310.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2e310 
+Building CXX object CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_9bc59
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bc59.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9bc59 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -239,8 +239,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e310' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SZJ7G.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2e310 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bc59' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPJRrSa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9bc59 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -248,14 +248,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2e310/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2e310.dir/build.make CMakeFiles/cmTC_2e310.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9bc59/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9bc59.dir/build.make CMakeFiles/cmTC_9bc59.dir/build]
   ignore line: [make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_2e310]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e310.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2e310 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_9bc59]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bc59.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9bc59 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -265,13 +265,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e310' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SZJ7G.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2e310 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bc59' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPJRrSa.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9bc59 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc5SZJ7G.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccPJRrSa.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -288,7 +288,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2e310] ==> ignore
+    arg [cmTC_9bc59] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -300,7 +300,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_2e310.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9bc59.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -328,14 +328,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4b9ae/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4b9ae.dir/build.make CMakeFiles/cmTC_4b9ae.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1fdf0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fdf0.dir/build.make CMakeFiles/cmTC_1fdf0.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4b9ae.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_4b9ae.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4b9ae
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b9ae.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_4b9ae.dir/feature_tests.cxx.o  -o cmTC_4b9ae 
+Building CXX object CMakeFiles/cmTC_1fdf0.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_1fdf0.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1fdf0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fdf0.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_1fdf0.dir/feature_tests.cxx.o  -o cmTC_1fdf0 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -401,14 +401,14 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_297a1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_297a1.dir/build.make CMakeFiles/cmTC_297a1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c0de8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c0de8.dir/build.make CMakeFiles/cmTC_c0de8.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_297a1.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_297a1.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_297a1
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_297a1.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_297a1.dir/feature_tests.cxx.o  -o cmTC_297a1 
+Building CXX object CMakeFiles/cmTC_c0de8.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_c0de8.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c0de8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0de8.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c0de8.dir/feature_tests.cxx.o  -o cmTC_c0de8 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -474,14 +474,14 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_71d8c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_71d8c.dir/build.make CMakeFiles/cmTC_71d8c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b00b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b00b5.dir/build.make CMakeFiles/cmTC_b00b5.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_71d8c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_71d8c.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_71d8c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71d8c.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_71d8c.dir/feature_tests.cxx.o  -o cmTC_71d8c 
+Building CXX object CMakeFiles/cmTC_b00b5.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_b00b5.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b00b5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b00b5.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b00b5.dir/feature_tests.cxx.o  -o cmTC_b00b5 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 
@@ -547,14 +547,14 @@ make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behaviora
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4a260/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4a260.dir/build.make CMakeFiles/cmTC_4a260.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2b7e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b7e3.dir/build.make CMakeFiles/cmTC_2b7e3.dir/build
 make[1]: Entering directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4a260.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_4a260.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4a260
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a260.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_4a260.dir/feature_tests.cxx.o  -o cmTC_4a260 
+Building CXX object CMakeFiles/cmTC_2b7e3.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_2b7e3.dir/feature_tests.cxx.o -c /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2b7e3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b7e3.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_2b7e3.dir/feature_tests.cxx.o  -o cmTC_2b7e3 
 make[1]: Leaving directory '/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build/CMakeFiles/CMakeTmp'
 
 

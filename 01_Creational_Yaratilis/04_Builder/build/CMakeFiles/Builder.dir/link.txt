@@ -1,1 +1,1 @@
-/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++14   CMakeFiles/Builder.dir/src/main.cpp.o  -o ../bin/Builder 
+/usr/bin/c++  -O2 -Wall -Wextra -Werror -std=c++17   CMakeFiles/Builder.dir/src/main.cpp.o  -o ../bin/Builder 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/04_Builder/src/main.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder/src/main.cpp
 iostream
 -
 string

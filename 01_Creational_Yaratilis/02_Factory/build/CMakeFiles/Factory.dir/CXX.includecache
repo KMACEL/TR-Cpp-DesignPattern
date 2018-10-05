@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Araba.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Araba.h
 iostream
 -
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Arac.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Arac.cpp
 iostream
 -
 Arac.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Arac.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Arac.h
 Tren.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Tren.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Tren.h
 Araba.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Araba.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Araba.h
 Ucak.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Ucak.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Ucak.h
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Arac.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Arac.h
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Tren.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Tren.h
 iostream
 -
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Ucak.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Ucak.h
 iostream
 -
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/main.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/main.cpp
 iostream
 -
 Arac.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/02_Factory/src/Arac.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/02_Factory/src/Arac.h
 

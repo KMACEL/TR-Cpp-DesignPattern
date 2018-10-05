@@ -59,10 +59,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread
+CMAKE_SOURCE_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build
+CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/Singleton-03_Multithread.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creation
 CMakeFiles/Singleton-03_Multithread.dir/all:
 	$(MAKE) -f CMakeFiles/Singleton-03_Multithread.dir/build.make CMakeFiles/Singleton-03_Multithread.dir/depend
 	$(MAKE) -f CMakeFiles/Singleton-03_Multithread.dir/build.make CMakeFiles/Singleton-03_Multithread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build/CMakeFiles --progress-num=1,2,3 "Built target Singleton-03_Multithread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build/CMakeFiles --progress-num=1,2,3 "Built target Singleton-03_Multithread"
 .PHONY : CMakeFiles/Singleton-03_Multithread.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/Singleton-03_Multithread.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Singleton-03_Multithread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Singleton-03_Multithread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build/CMakeFiles 0
 .PHONY : CMakeFiles/Singleton-03_Multithread.dir/rule
 
 # Convenience name for target.

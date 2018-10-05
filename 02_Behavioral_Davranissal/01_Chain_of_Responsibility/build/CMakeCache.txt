@@ -213,12 +213,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Chain_BINARY_DIR:STATIC=/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build
-
-//Value Computed by CMake
-Chain_SOURCE_DIR:STATIC=/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility
-
-//Value Computed by CMake
 ChainofResponsibility_BINARY_DIR:STATIC=/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/01_Chain_of_Responsibility/build
 
 //Value Computed by CMake

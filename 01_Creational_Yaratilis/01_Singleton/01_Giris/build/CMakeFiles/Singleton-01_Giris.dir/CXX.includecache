@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/01_Giris/src/Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/src/Mesaj.cpp
+iostream
+-
+Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/src/Mesaj.h
+
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/src/Mesaj.h
 iostream
 -
 
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/01_Giris/src/main.cpp
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/src/main.cpp
 iostream
 -
 string
 -
 Mesaj.h
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/01_Giris/src/Mesaj.h
+/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/src/Mesaj.h
 

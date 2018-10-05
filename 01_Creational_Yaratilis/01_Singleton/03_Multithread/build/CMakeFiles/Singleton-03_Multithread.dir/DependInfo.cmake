@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/Mesaj.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build/CMakeFiles/Singleton-03_Multithread.dir/src/Mesaj.cpp.o"
-  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/src/main.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Yaratilis_Creational/01_Singleton/03_Multithread/build/CMakeFiles/Singleton-03_Multithread.dir/src/main.cpp.o"
+  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/Mesaj.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build/CMakeFiles/Singleton-03_Multithread.dir/src/Mesaj.cpp.o"
+  "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/src/main.cpp" "/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/03_Multithread/build/CMakeFiles/Singleton-03_Multithread.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
