@@ -9,10 +9,6 @@
 /home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/03_Interpreter/src/main.cpp
 iostream
 -
-string
--
-map
--
-list
+cstring
 -
 

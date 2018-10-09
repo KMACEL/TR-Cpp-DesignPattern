@@ -1,181 +1,213 @@
 //============================================================================
-// İsim        : 02_Command
+// İsim        : 03_Interpreter
 // Yazan       : Mert AceL
 // Version     : 1.0
 // Copyright   : AceL
-// Açıklama    : Command Pattern
+// Açıklama    : Interpreter Pattern
 //============================================================================
 #include <iostream>
-#include <string>
-#include <map>
-#include <list>
+#include <cstring>
 
-namespace wikibooks_design_patterns
-{
+using namespace std;
 
-//	based on the Java sample around here
-
-typedef std::string String;
-struct Expression;
-typedef std::map<String, Expression *> Map;
-typedef std::list<Expression *> Stack;
-
-struct Expression
-{
-  virtual int interpret(Map variables) = 0;
-  virtual ~Expression() {}
-};
-
-class Number : public Expression
+class RomaRakamInterpreter
 {
 private:
-  int number;
+  RomaRakamInterpreter *binler;
+  RomaRakamInterpreter *yuzler;
+  RomaRakamInterpreter *onlar;
+  RomaRakamInterpreter *birler;
+
+protected:
+  virtual char bir() {}
+  virtual char *dort() {}
+  virtual char bes() {}
+  virtual char *dokuz() {}
+  virtual int carpan() {}
 
 public:
-  Number(int number) { this->number = number; }
-  int interpret(Map variables) { return number; }
-};
-
-class Plus : public Expression
-{
-  Expression *leftOperand;
-  Expression *rightOperand;
-
-public:
-  Plus(Expression *left, Expression *right)
+  RomaRakamInterpreter();
+  RomaRakamInterpreter(int) {}
+  int interpret(char *);
+  
+  virtual void interpret(char *input, int &total)
   {
-    leftOperand = left;
-    rightOperand = right;
-  }
-  ~Plus()
-  {
-    delete leftOperand;
-    delete rightOperand;
-  }
-
-  int interpret(Map variables)
-  {
-    return leftOperand->interpret(variables) + rightOperand->interpret(variables);
-  }
-};
-
-class Minus : public Expression
-{
-  Expression *leftOperand;
-  Expression *rightOperand;
-
-public:
-  Minus(Expression *left, Expression *right)
-  {
-    leftOperand = left;
-    rightOperand = right;
-  }
-  ~Minus()
-  {
-    delete leftOperand;
-    delete rightOperand;
-  }
-
-  int interpret(Map variables)
-  {
-    return leftOperand->interpret(variables) - rightOperand->interpret(variables);
-  }
-};
-
-class Variable : public Expression
-{
-  String name;
-
-public:
-  Variable(String name) { this->name = name; }
-  int interpret(Map variables)
-  {
-    if (variables.end() == variables.find(name))
-      return 0;
-    return variables[name]->interpret(variables);
-  }
-};
-
-//	While the interpreter pattern does not address parsing, a parser is provided for completeness.
-
-class Evaluator : public Expression
-{
-  Expression *syntaxTree;
-
-public:
-  Evaluator(String expression)
-  {
-    Stack expressionStack;
-
-    size_t last = 0;
-    for (size_t next = 0; String::npos != last; last = (String::npos == next) ? next : (1 + next))
+    int index;
+    index = 0;
+    if (!strncmp(input, dokuz(), 2))
     {
-      next = expression.find(' ', last);
-      String token(expression.substr(last, (String::npos == next) ? (expression.length() - last) : (next - last)));
-
-      if (token == "+")
+      total += 9 * carpan();
+      index += 2;
+    }
+    else if (!strncmp(input, dort(), 2))
+    {
+      total += 4 * carpan();
+      index += 2;
+    }
+    else
+    {
+      if (input[0] == bes())
       {
-        Expression *right = expressionStack.back();
-        expressionStack.pop_back();
-        Expression *left = expressionStack.back();
-        expressionStack.pop_back();
-        Expression *subExpression = new Plus(right, left);
-        expressionStack.push_back(subExpression);
-      }
-      else if (token == "-")
-      {
-        // it's necessary remove first the right operand from the stack
-        Expression *right = expressionStack.back();
-        expressionStack.pop_back();
-        // ..and after the left one
-        Expression *left = expressionStack.back();
-        expressionStack.pop_back();
-        Expression *subExpression = new Minus(left, right);
-        expressionStack.push_back(subExpression);
+        total += 5 * carpan();
+        index = 1;
       }
       else
-        expressionStack.push_back(new Variable(token));
+        index = 0;
+      for (int end = index + 3; index < end; index++)
+        if (input[index] == bir())
+          total += 1 * carpan();
+        else
+          break;
     }
-
-    syntaxTree = expressionStack.back();
-    expressionStack.pop_back();
-  }
-
-  ~Evaluator()
-  {
-    delete syntaxTree;
-  }
-
-  int interpret(Map context)
-  {
-    return syntaxTree->interpret(context);
+    strcpy(input, &(input[index]));
   }
 };
 
-} // namespace wikibooks_design_patterns
+class Binler : public RomaRakamInterpreter
+{
+public:
+  Binler(int) : RomaRakamInterpreter(1) {}
+
+protected:
+  char bir()
+  {
+    return 'M';
+  }
+  char *dort()
+  {
+    return "";
+  }
+  char bes()
+  {
+    return '\0';
+  }
+  char *dokuz()
+  {
+    return "";
+  }
+  int carpan()
+  {
+    return 1000;
+  }
+};
+
+class Yuzler : public RomaRakamInterpreter
+{
+public:
+  Yuzler(int) : RomaRakamInterpreter(1) {}
+
+protected:
+  char bir()
+  {
+    return 'C';
+  }
+  char *dort()
+  {
+    return "CD";
+  }
+  char bes()
+  {
+    return 'D';
+  }
+  char *dokuz()
+  {
+    return "CM";
+  }
+  int carpan()
+  {
+    return 100;
+  }
+};
+
+class Onlar : public RomaRakamInterpreter
+{
+public:
+  Onlar(int) : RomaRakamInterpreter(1) {}
+
+protected:
+  char bir()
+  {
+    return 'X';
+  }
+  char *dort()
+  {
+    return "XL";
+  }
+  char bes()
+  {
+    return 'L';
+  }
+  char *dokuz()
+  {
+    return "XC";
+  }
+  int carpan()
+  {
+    return 10;
+  }
+};
+
+class Birler : public RomaRakamInterpreter
+{
+public:
+  Birler(int) : RomaRakamInterpreter(1) {}
+
+protected:
+  char bir()
+  {
+    return 'I';
+  }
+  char *dort()
+  {
+    return "IV";
+  }
+  char bes()
+  {
+    return 'V';
+  }
+  char *dokuz()
+  {
+    return "IX";
+  }
+  int carpan()
+  {
+    return 1;
+  }
+};
+
+RomaRakamInterpreter::RomaRakamInterpreter()
+{
+  binler = new Binler(1);
+  yuzler = new Yuzler(1);
+  onlar = new Onlar(1);
+  birler = new Birler(1);
+}
+
+int RomaRakamInterpreter::interpret(char *input)
+{
+  int total;
+  total = 0;
+  binler->interpret(input, total);
+  yuzler->interpret(input, total);
+  onlar->interpret(input, total);
+  birler->interpret(input, total);
+
+  if (strcmp(input, ""))
+  {
+    return 0;
+  }
+
+  return total;
+}
 
 int main()
 {
-  using namespace wikibooks_design_patterns;
-
-  Evaluator sentence("w x z - +");
-
-  static const int sequences[][3] = {
-      {5, 10, 42},
-      {1, 3, 2},
-      {7, 9, -5},
-  };
-  for (size_t i = 0; sizeof(sequences) / sizeof(sequences[0]) > i; ++i)
+  RomaRakamInterpreter interpreter;
+  char input[20];
+  cout << "Roma rakamı giriniz : ";
+  while (cin >> input)
   {
-    Map variables;
-    variables["w"] = new Number(sequences[i][0]);
-    variables["x"] = new Number(sequences[i][1]);
-    variables["z"] = new Number(sequences[i][2]);
-    int result = sentence.interpret(variables);
-    for (Map::iterator it = variables.begin(); variables.end() != it; ++it)
-      delete it->second;
-
-    std::cout << "Interpreter result: " << result << std::endl;
+    cout << "Latin Karşılığı : " << interpreter.interpret(input) << endl;
+    cout << "Roma rakamı giriniz : ";
   }
-  return 0;
 }
