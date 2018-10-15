@@ -1,3 +1,0 @@
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/03_Interpreter/build/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/03_Interpreter/build/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/02_Behavioral_Davranissal/03_Interpreter/build/CMakeFiles/Interpreter.dir

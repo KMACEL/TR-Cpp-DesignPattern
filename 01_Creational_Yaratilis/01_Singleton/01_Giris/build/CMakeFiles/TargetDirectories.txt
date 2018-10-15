@@ -1,3 +1,0 @@
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/build/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/build/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/01_Singleton/01_Giris/build/CMakeFiles/Singleton-01_Giris.dir
