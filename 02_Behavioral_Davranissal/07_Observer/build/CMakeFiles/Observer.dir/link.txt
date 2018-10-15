@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -std=c++17   CMakeFiles/Observer.dir/src/main.cpp.o  -o ../bin/Observer 
