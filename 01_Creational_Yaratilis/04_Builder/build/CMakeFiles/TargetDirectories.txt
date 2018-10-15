@@ -1,3 +1,0 @@
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder/build/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder/build/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp-DesignPattern/01_Creational_Yaratilis/04_Builder/build/CMakeFiles/Builder.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -Wall -Wextra -std=c++11   CMakeFiles/Interpreter.dir/src/main.cpp.o  -o ../bin/Interpreter 
