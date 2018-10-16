@@ -51,7 +51,7 @@ public:
   {
     aciklama = "Fiat Egea";
   }
-  virtual double getFiyat()
+  virtual double getFiyat() override
   {
     return 56000.23;
   }
@@ -71,12 +71,12 @@ public:
   {
     this->araba = araba;
   }
-  string getAciklama()
+  string getAciklama() override
   {
     return araba->getAciklama() + ", Navigasyon";
   }
 
-  double getFiyat()
+  double getFiyat() override
   {
     return 300.56 + araba->getFiyat();
   }
@@ -96,12 +96,12 @@ public:
   {
     this->araba = araba;
   }
-  string getAciklama()
+  string getAciklama() override
   {
     return araba->getAciklama() + ", Süper ses sistemi";
   }
 
-  double getFiyat()
+  double getFiyat() override
   {
     return 250.60 + araba->getFiyat();
   }
@@ -121,12 +121,12 @@ public:
   {
     this->araba = araba;
   }
-  string getAciklama()
+  string getAciklama() override
   {
     return araba->getAciklama() + ", Otomatik Vites";
   }
 
-  double getFiyat()
+  double getFiyat() override
   {
     return 5450.25 + araba->getFiyat();
   }
