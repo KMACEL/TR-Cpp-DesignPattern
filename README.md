@@ -55,14 +55,18 @@ git clone https://github.com/KMACEL/TR-Cpp-DesignPattern.git
 ```
 ## **Çalıştırma**
 ```bash
-cd <ornek_proje_yolu>/build
+cd <ornek_proje_yolu>
+mkdir build
+cd build
 cmake ..
 make
 ./../bin/<proje_ismi>
 ```
 
 ```bash
-cd 01_Creational_Yaratilis/01_Singleton/01_Giris/build
+cd 01_Creational_Yaratilis/01_Singleton/01_Giris/
+mkdir build
+cd build
 cmake ..
 make
 ./../bin/Singleton-01_Giris
