@@ -42,7 +42,7 @@ class HavaDurumuVerileri : public HavaDurumuVerisiInterface
     list<ObserverInterface *> observeInterfacesListe;
 
   protected:
-    void bildiriOb()
+    void bildiriOb() override
     {
         for (list<ObserverInterface *>::iterator it = observeInterfacesListe.begin(); it != observeInterfacesListe.end(); it++)
         {
@@ -60,12 +60,12 @@ class HavaDurumuVerileri : public HavaDurumuVerisiInterface
         bildiriOb();
     }
 
-    void kayitOb(ObserverInterface *ob)
+    void kayitOb(ObserverInterface *ob) override
     {
         observeInterfacesListe.push_back(ob);
     }
 
-    void silOb(ObserverInterface *ob)
+    void silOb(ObserverInterface *ob) override
     {
         observeInterfacesListe.remove(ob);
     }
@@ -85,7 +85,7 @@ class MevcutDurumGosterici : public ObserverInterface, public DurumGostericiInte
     {
         veri.kayitOb(this);
     }
-    void goster()
+    void goster() override
     {
         cout << "_____Hava Durum_____" << endl;
         cout << "Nem      : " << nem << endl;
@@ -94,7 +94,7 @@ class MevcutDurumGosterici : public ObserverInterface, public DurumGostericiInte
         cout << "_______________________________" << endl;
     }
 
-    void guncelle(float nem, float sicaklik, float basinc)
+    void guncelle(float nem, float sicaklik, float basinc) override
     {
         this->nem = nem;
         this->sicaklik = sicaklik;
