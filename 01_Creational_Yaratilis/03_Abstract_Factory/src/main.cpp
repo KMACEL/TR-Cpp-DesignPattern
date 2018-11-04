@@ -6,11 +6,59 @@
 // Açıklama    : 03_Abstract_Factory Pattern
 //============================================================================
 #include <iostream>
-#include "Fabrika.h"
 using namespace std;
 
 #define DOLAP 1
 //#define MASA 1
+
+class Marangoz
+{
+  public:
+    virtual void urunTip() = 0;
+};
+
+class Masa : public Marangoz
+{
+  public:
+    void urunTip() override
+    {
+        std::cout << "Masa Yapım Onarım" << std::endl;
+    }
+};
+
+class Dolap : public Marangoz
+{
+  public:
+    void urunTip() override
+    {
+        std::cout << "Dolap Yapım Onarım" << std::endl;
+    }
+};
+
+class Fabrika
+{
+  public:
+    virtual Marangoz *fabrikaOlustur() = 0;
+};
+
+class DolapOlustur : public Fabrika
+{
+  public:
+    Marangoz *fabrikaOlustur() override
+    {
+        return new Dolap;
+    }
+};
+
+class MasaOlustur : public Fabrika
+{
+  public:
+    Marangoz *fabrikaOlustur() override
+    {
+        return new Masa;
+    }
+};
+
 int main()
 {
 #ifdef DOLAP
@@ -19,9 +67,9 @@ int main()
     Fabrika *fabrika = new MasaOlustur;
 #endif
 
-    Marangoz *Marangoz;
-    Marangoz = fabrika->fabrikaOlustur();
-    Marangoz->urunTip();
+    Marangoz *marangoz;
+    marangoz = fabrika->fabrikaOlustur();
+    marangoz->urunTip();
 
     return 0;
 }
