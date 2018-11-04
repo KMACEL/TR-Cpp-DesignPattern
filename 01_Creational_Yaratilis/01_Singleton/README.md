@@ -4,8 +4,6 @@
 
 Singleton patternini 2 porje olarak göreceksiniz. Bunun sebebi, bu pattern multithread yapılarda bazı istenmeyen sonuçlar sağlama olasılığıdır ve buna alınan önlemler içindir.
 
-## Singleton Pattern Kullanım Alanı
-
 ## Singleton Pattern Kullanım Esasları
 Bu pattern kullanılması için uyulacak adımlar şu şekildedir.
 * İlk adım olarak, **Singleton** olacak sınıf içinde **private** erişim hakkı olarak **static** biçiminde, **<Singleton_Sınıfınızın_ismi>** tipinde bir değişken tanımlıyoruz. Bizim projemizde bu şu şekilde tanımlıyoruz;
