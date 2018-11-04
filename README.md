@@ -8,7 +8,7 @@ Bu projedeki örnekler, daha anlaşılabilir olması için Türkçe yazılmaya �
 Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin için nesneler yaratan kalıplardır. Bu, belirli bir durum için hangi nesnelerin yaratılması gerektiğine karar vermede programınıza daha fazla esneklik sağlar.
 
 * ✓✓ **Singleton** pattern,  bir sınıf için sadece bir nesne oluşturmayı sağlar.
-* ✓ **Factory method** pattern, oluşturulacak tam sınıfı belirtmeden nesneleri oluşturur.
+* ✓✓ **Factory method** pattern, oluşturulacak tam sınıfı belirtmeden nesneleri oluşturur.
 * ✓ **Abstract factory**  pattern, ortak gruplar, ortak bir temaya sahip olan sınıfların yaratılış biçimini hedefler.
 * ✓ **Builder** pattern, karmaşık nesneler inşa eder.
 * ✓ **Prototype** pattern, mevcut bir nesneyi klonlayarak nesneler oluşturur.
