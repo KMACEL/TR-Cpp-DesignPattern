@@ -1,14 +1,17 @@
 //============================================================================
-// İsim        : 01_Singleton
+// İsim        : 02_Multithread
 // Yazan       : Mert AceL
 // Version     : 1.0
 // Copyright   : AceL
-// Açıklama    : Singleton Giriş Örneği
+// Açıklama    : Multithread Singleton Kullanımı
 //============================================================================
 #include <iostream>
 #include <string>
+#include <mutex>
 
 using namespace std;
+
+mutex mtx;
 
 class Mesaj
 {
@@ -37,36 +40,34 @@ protected:
   ~Mesaj();
 
 public:
-  // Mesaj sınıfımızı kullanmak için oluşturduğumuz public türündeki method
   static Mesaj *getInstance()
   {
-    // Eğer INSTANCE değeri 0 ise yani hiç bu sınıf çağırılmamışsa,
-    // sınıfı oluşturuyoruz.
+    // Eğer çift kontrollü olursa daha güvenli olduğu gözlemlenmiştir http://www.drdobbs.com/cpp/c-and-the-perils-of-double-checked-locki/184405726
     if (INSTANCE == 0)
     {
-      INSTANCE = new Mesaj();
+      mtx.lock();
+      if (INSTANCE == 0)
+      {
+        INSTANCE = new Mesaj();
+      }
+      mtx.unlock();
     }
-    // Eğer bu sınıf daha öncd oluşturulmuşsa, yani çağırılmışsa geriye
-    // var olan "INSTANCE"yi döndürüyoruz
     return INSTANCE;
   }
 
-  // mesaj değişkenine veri atamamıza yardımcı olan method
+  void mesajYazir()
+  {
+    cout << "Mesajınız : " << getMesaj() << endl;
+  }
+
   void setMesaj(string mesaj)
   {
     this->mesaj = mesaj;
   }
 
-  // mesaj değişkeninden veri almaya yarayan method
   string getMesaj()
   {
     return this->mesaj;
-  }
-
-  // mesaj değişken içeriğini yazmaya yarayan method
-  void mesajYazir()
-  {
-    cout << "Mesajınız : " << getMesaj() << endl;
   }
 };
 
@@ -75,20 +76,14 @@ Mesaj *Mesaj::INSTANCE = 0;
 
 int main()
 {
-  // 1. Kullanış Biçimi : Bir "Mesaj" sınıfından "m1" adında nesne yaratıp,
-  // Mesaj sınıfının "Instance"sini içeri aktrıyoruz
+  // 1. Kullanış Biçimi
   Mesaj *m1 = Mesaj::getInstance();
   m1->setMesaj("Test");
   m1->mesajYazir();
 
-  // 2. Kullanış Biçimi : Hiç bir nesne yaratmadan direk kullanabiliyoruz.
+  // 2. Kullanış Biçimi
   Mesaj::getInstance()->setMesaj("Merhaba");
   Mesaj::getInstance()->mesajYazir();
-
-  // Burada da gösterilmek istenen, tekrar bir nesne yaratılmasına rağmen ve
-  // setMesaj() fonksiyonunu kullanmamamıza rağmen, bir önceki hali oluyor.
-  Mesaj *m2 = Mesaj::getInstance();
-  m2->mesajYazir();
 
   return 0;
 }

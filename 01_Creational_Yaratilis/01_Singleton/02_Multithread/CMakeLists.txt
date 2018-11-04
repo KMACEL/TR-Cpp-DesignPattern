@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.9)
 
 # VARIABLES
 set(AUTHOR_NAME "Mert Acel")
-set(PROJECT_NAME "Singleton-02_Guvenli")
+set(PROJECT_NAME "Singleton-03_Multithread")
 
 # Project Information
-project (${PROJECT_NAME} VERSION 1.0.1 DESCRIPTION "Guvenli Singleton")
+project (${PROJECT_NAME} VERSION 1.0.1 DESCRIPTION "Multithread Singleton")
 
 # Information
 message(STATUS "AUTHOR_NAME          : ${AUTHOR_NAME}")
@@ -17,4 +17,4 @@ message(STATUS "CMAKE_SYSTEM         : ${CMAKE_SYSTEM}")
 set(CMAKE_CXX_FLAGS "-O2 -Wall -Wextra -Werror -std=c++17")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
-add_executable(${PROJECT_NAME} src/main.cpp src/Mesaj.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp)
