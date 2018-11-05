@@ -67,8 +67,7 @@ int main()
     Fabrika *fabrika = new MasaOlustur;
 #endif
 
-    Marangoz *marangoz;
-    marangoz = fabrika->fabrikaOlustur();
+    Marangoz *marangoz = fabrika->fabrikaOlustur();
     marangoz->urunTip();
 
     return 0;
