@@ -3,7 +3,7 @@ Bu pattern kullanmım amacı, siz projenizde bir takım standartlar oluşturmak 
 
 **Factory Pattern**, bir var olan şablona uygun olarak nesneler yaratmaktadır. **Factory  Method Pattern**, nesneler oluşturmak için bir arabirim tanımlar. Fakat işlevi kullanıcı belirler. Örneğin bir plastik baskı fabrikası düşünün. Baskı malzemesi aynıdır. Fakat sonunda çıkan ürün, kalıba göre farklılılar gösterir.
 
-## Factory Method Pattern Kullanım Esasları
+## Factory Method Pattern Kullanım Adımları
 
 * İlk adım olarak **soyut** bir üst sınıf oluşurulur.
 
