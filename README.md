@@ -9,8 +9,8 @@ Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin içi
 
 * ✓✓ **Singleton** pattern,  bir sınıf için sadece bir nesne oluşturmayı sağlar.
 * ✓✓ **Factory method** pattern, oluşturulacak tam sınıfı belirtmeden nesneleri oluşturur.
-* ✓ **Abstract factory**  pattern, ortak gruplar, ortak bir temaya sahip olan sınıfların yaratılış biçimini hedefler.
-* ✓ **Builder** pattern, karmaşık nesneler inşa eder.
+* ✓✓ **Abstract factory**  pattern, ortak gruplar, ortak bir temaya sahip olan sınıfların yaratılış biçimini hedefler.
+* ✓✓ **Builder** pattern, karmaşık nesneler inşa eder.
 * ✓ **Prototype** pattern, mevcut bir nesneyi klonlayarak nesneler oluşturur.
 
 ## **Behavioral** (Davranışsal)

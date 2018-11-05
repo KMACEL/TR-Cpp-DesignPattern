@@ -1,15 +1,11 @@
-//============================================================================
-// İsim        : 04_Builder
-// Yazan       : Mert AceL
-// Version     : 1.0
-// Copyright   : AceL
-// Açıklama    : Builder Pattern
-//============================================================================
-#include <iostream>
-#include <string>
-#include <memory>
-using namespace std;
+# Builder Pattern
+**"Builder Pattern"**, karmaşık bir nesnenin yapısını temsilinden ayırmak için kullanılır. Böylece aynı oluşturma işlemi ile farklı nesneler oluşturabilmektedir. Bu patterni, karmaşık bir obje oluşturmak istendiğinde fakat karmaşık bir kurucu üyeye veya argümanlara ihtiyaç duymak istemediğimizde kullanmaktayız.
 
+## Builder Pattern Kullanım Adımları
+
+* İlk olarak ana sınıfımızı oluşturuyoruz. Ana sınıfımız **"Bilgisayar"** ismindedir. İçeriğinde bilgisayar donanımı değişkenleri ve bunlar ile iletişim methodları barındırmakta. En son olarak, verilen parçları **"kur()"** methodu ile ekrana yazdırmakta.
+
+```cpp
 class Bilgisayar
 {
   private:
@@ -43,7 +39,11 @@ class Bilgisayar
              << ekranKarti << " - Kurulum Tamamlandı" << endl;
     }
 };
+```
 
+* Ardından ana sınıfımızın **"Builder"**ını oluşturuyoruz. Bu sınıf içinde **"Bilgisayar"** türünde değişken bulunmakta. **"unique_ptr"** kullanmamızın nedeni, **pointer** ile çalıştığımızda ve **"new"** ile yeni sınıflar oluşturduğumuzda, **"RAM"** bellekte yer kaplamaktadır. Bunları işlemlerimiz bitince silmemiz gerekmektedir. **"unique_ptr"** bu işlemi bizim için, efektif bir biçimde yerine getirmektedir. Bu sınıfta **"getBilgisayar"** methodu bulunmaktadır. Bu method, geriye oluşturduğumuz **"Bilgisayar"** nesnesini döndürür. **"yeniBilgisayarOlustur"** methodu ise, **"Bilgisayar"** türünden bir sınıf oluşturup, **"bilgisayar"** değişkenine atar. Bu sınıf soyut bir sınıftır. **"buildAnakart"**, **"buildRam"**, **"buildEkrankarti"**, **"buildSegment"** methodları bulunmaktadır.
+
+```cpp
 class BilgisayarBuilder
 {
   protected:
@@ -65,9 +65,11 @@ class BilgisayarBuilder
     virtual void buildEkrankarti() = 0;
     virtual void buildSegment() = 0;
 };
+```
 
-//----------------------------------------------------------------
+* **BilgisayarBuilder** dan türetilen, spesifik alt sınıfları oluşturuyoruz. Bu sınıfların amacı, **"BilgisayarBuilder"** da bulunan ve istenen **"buildAnakart"**, **"buildRam"**, **"buildEkrankarti"**, **"buildSegment"** methodlarını anlamlandırmak. Verileri atamak.
 
+```cpp
 class OrtaSegmetBilgisayarBuilder : public BilgisayarBuilder
 {
   public:
@@ -119,8 +121,11 @@ class UstSegmetBilgisayarBuilder : public BilgisayarBuilder
         bilgisayar->setSegment("Üst Segmet");
     }
 };
+```
 
-//----------------------------------------------------------------
+* En son olarak **"Build"** işlemini yapacak olan sınıfımızı oluşturuyoruz. bu sınıfımızda **"BilgisayarBuilder"** sınıfından bir nesnemiz bulunmakta. **"bilgisayarSec"** isminde bir methodumuz bulunmakta. Bu method, kullanıcıdan **"BilgisayarBuilder"** türünde değişken almakta. Fonksiyonda aldığı veriyi, sınıf içinde oluşturduğu **"bilgisayarBuilder"** nesnesine atamakta. **"bilgisayarKur"** methodu ilede, **"Bilgisayar"** sınıfındaki  **"kur"** methodunu çalıştırmaktadır.
+
+```cpp
 class Build
 {
   private:
@@ -142,7 +147,11 @@ class Build
         bilgisayarBuilder->getBilgisayar()->kur();
     }
 };
+```
 
+* Kullanım için ilk önce **"Build"** nesnesi oluşturuyoruz. Ardınan **Builder** dan türetilen, spesifik alt sınıflardan nesneler oluşturuyoruz. **"build.bilgisayarSec"** methodu ile **Builder** dan türetilen nesneyi atıyoruz. En son olarka kur methodunu çalıştıryoruz.
+
+```cpp
 int main()
 {
     Build build;
@@ -155,3 +164,4 @@ int main()
     build.bilgisayarSec(&ustSegment);
     build.bilgisayarKur();
 }
+```
