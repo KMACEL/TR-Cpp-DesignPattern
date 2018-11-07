@@ -1,30 +1,35 @@
-//============================================================================
-// İsim        : 07_Observer
-// Yazan       : Mert AceL
-// Version     : 1.0
-// Copyright   : AceL
-// Açıklama    : Observer Pattern
-//============================================================================
-#include <iostream>
-#include <list>
+# Observer Pattern
 
-using namespace std;
+Uygulamada bir yer ya da birçok yer, bir sistem olayı veya bir uygulama durumu değişikliği hakkında bilgi sahibi olmamız gerekir. Sistem olaylarını dinlemeye ve ilgili taraflara bildirimde bulunmanın standart bir yoluna, standart bir şekilde abone olmak durumunda kullanılmaktadır. 
 
-// Abstract Observer
+Yani **"Observer Pattern"**, nesneler arasında bağımlılık tanımlar, böylece bir nesne değiştiğinde, tüm bağımlıları otomatik olarak bildirilir ve güncellenir.
+
+## Observer Pattern Kullanım Adımları
+Bu örneğimizde hava durumu gösterici yapıyoruz. Projemizde, nem, sıcaklık ve basıç verilerini bir ekranda gösteren, yeni veriler geldikçe de gerekli yerleri güncelleyen yapıyı inceleyeceğiz
+
+* İlk önce bir soyut sınıf tanımlıyoruz. Bizim sınıfımızın ismini **"ObserverInterface"** olarak belirledik. Bu sınıf, içinde **"guncelle"** adında bir soyut method bulundurmakta. Bu fonksiyon, nem, sıcaklık ve basınç verilerini almakta.
+
+```cpp
 class ObserverInterface
 {
   public:
     virtual void guncelle(float nem, float sicaklik, float basinc) = 0;
 };
+```
 
-// Abstract Interface for Displays
+* Yapılan değişikliği göstermeye yarayan soyut bir sınıf tanımlıyoruz.
+
+```cpp
 class DurumGostericiInterface
 {
   public:
     virtual void goster() = 0;
 };
+```
 
-// The Abstract Subjectu
+* Gelen hava durumlarını kontrol etmeye yaran, **"HavaDurumuVerisiInterface"** isminde soyut bir sınıf tanımlıyoruz.
+
+```cpp
 class HavaDurumuVerisiInterface
 {
   public:
@@ -32,8 +37,11 @@ class HavaDurumuVerisiInterface
     virtual void silOb(ObserverInterface *ob) = 0;
     virtual void bildiriOb() = 0;
 };
+```
 
-// The Concrete Subject
+* Hava durumu verilerini alan **"HavaDurumuVerileri"** ismindeki sınıfımızı tanımlıyoruz. Bu sınıf  **"HavaDurumuVerisiInterface"** soyut sınıfını miras olarak alan somut bir sınıftır.
+
+```cpp
 class HavaDurumuVerileri : public HavaDurumuVerisiInterface
 {
   private:
@@ -71,8 +79,11 @@ class HavaDurumuVerileri : public HavaDurumuVerisiInterface
         observeInterfacesListe.remove(ob);
     }
 };
+```
 
-// A Concrete Observer
+* Gelen yeni verileri gösteren, **"MevcutDurumGosterici"** ismindeki sınıfımızı oluşturuyoruz. Bu sınıf, **"ObserverInterface"** ve **"DurumGostericiInterface"** sınıflarından miras almatka.
+
+```cpp
 class MevcutDurumGosterici : public ObserverInterface, public DurumGostericiInterface
 {
   private:
@@ -102,8 +113,11 @@ class MevcutDurumGosterici : public ObserverInterface, public DurumGostericiInte
         this->basinc = basinc;
     }
 };
+```
 
-// A Concrete Observer
+* Gelen verilerin istatiğini tutan bir sınıf daha oluşturuyoruz. Bu sınıfta, **"ObserverInterface"** ve **"DurumGostericiInterface"** sınıflarından miras almatka.
+
+```cpp
 class HavaIstatistik : public ObserverInterface, public DurumGostericiInterface
 {
   private:
@@ -142,7 +156,7 @@ class HavaIstatistik : public ObserverInterface, public DurumGostericiInterface
         havaDurumuVerileri.kayitOb(this);
     }
 
-    void goster()
+    void goster() override
     {
         cout << "________İstatistikler_________" << endl;
         cout << "En Düşük Sıcaklık  : " << enDusukSicaklik << endl;
@@ -160,7 +174,7 @@ class HavaIstatistik : public ObserverInterface, public DurumGostericiInterface
              << endl;
     }
 
-    void guncelle(float nem, float sicaklik, float basinc)
+    void guncelle(float nem, float sicaklik, float basinc) override
     {
         ++gelenVeriSayisi;
 
@@ -195,11 +209,16 @@ class HavaIstatistik : public ObserverInterface, public DurumGostericiInterface
         ortalamaBasinc = (ortalamaBasinc * (gelenVeriSayisi - 1) + basinc) / gelenVeriSayisi;
     }
 };
+```
 
+* Kullanım için, ilk olarak **"HavaDurumuVerileri"** nesnesi oluşturuyoruz. Bu nesne, **"yeniSensorVerisi"** methodu yardımı ile, sistemimize veri girişi sağlamaya yaramaktadır. Ardından göstericiler için **"MevcutDurumGosterici"** ve **"HavaIstatistik"** nesneleri oluşturup, işleyecekleri **"HavaDurumuVerileri"** nesnesini atıyoruz. Ardından veri girişi gerçekleştiriyoruz. Eğer hayıtı silmek istersek, yani dinleyeni silmek istersek, yani **"MevcutDurumGosterici"** ve **"HavaIstatistik"** sınıflarından birini devre dışı bırakmak istersek **"silOb"** yardımı ile bağlılığını kaldırıyoruz.
+
+```cpp
 int main()
 {
 
     HavaDurumuVerileri *havaVerisi = new HavaDurumuVerileri;
+
     MevcutDurumGosterici *mevcutDurumGosterici = new MevcutDurumGosterici(*havaVerisi);
     HavaIstatistik *havaIstatistik = new HavaIstatistik(*havaVerisi);
 
@@ -218,3 +237,4 @@ int main()
 
     return 0;
 }
+```
