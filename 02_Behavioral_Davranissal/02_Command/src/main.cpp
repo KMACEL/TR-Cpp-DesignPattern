@@ -41,7 +41,7 @@ public:
   {
   }
 
-  virtual void calistir()
+  virtual void calistir() override
   {
     isik.ac();
   }
@@ -57,7 +57,7 @@ public:
   KapatKomut(Isik &isik) : isik(isik)
   {
   }
-  virtual void calistir()
+  virtual void calistir() override
   {
     isik.kapat();
   }
