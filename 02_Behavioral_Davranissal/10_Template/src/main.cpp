@@ -46,7 +46,7 @@ class Sinif1 : public AbstractClass
     }
     void sabitIslem()
     {
-        cout << "Bu baya sabit" << endl;
+        cout << "Bu baya sabit Sinif1" << endl;
     }
 };
 
@@ -63,7 +63,7 @@ class Sinif2 : public AbstractClass
     }
     void sabitIslem()
     {
-        cout << "Bu baya sabit" << endl;
+        cout << "Bu baya sabit Sinif2 " << endl;
     }
 };
 
