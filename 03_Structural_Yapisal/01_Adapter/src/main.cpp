@@ -50,5 +50,6 @@ int main()
 {
     Daire *c = new DaireAdapter(18);
     c->ciz();
-    
+
+    delete[] c;
 }
