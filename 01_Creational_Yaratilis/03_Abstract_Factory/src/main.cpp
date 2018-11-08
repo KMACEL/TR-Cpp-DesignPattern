@@ -70,5 +70,7 @@ int main()
     Marangoz *marangoz = fabrika->fabrikaOlustur();
     marangoz->urunTip();
 
+    delete[] fabrika;
+    delete[] marangoz;
     return 0;
 }
