@@ -8,10 +8,6 @@
 #include <iostream>
 using namespace std;
 
-class Durum;
-class KAPAT;
-class AC;
-
 class Makine
 {
   private:
@@ -64,12 +60,7 @@ class KAPAT : public Durum
     {
         cout << "   KAPAT de-constructor\n";
     }
-    void ac(Makine *makine)
-    {
-        cout << "   KAPAT konumundan AC konumuna geçildi";
-        makine->setDurum(new AC());
-        delete this;
-    }
+    void ac(Makine *makine);
 };
 
 Makine::Makine()
@@ -97,6 +88,13 @@ void AC::kapat(Makine *m)
 {
     cout << "   AC konumundan KAPAT konumuna geçildi";
     m->setDurum(new KAPAT());
+    delete this;
+}
+
+void KAPAT::ac(Makine *makine)
+{
+    cout << "   KAPAT konumundan AC konumuna geçildi";
+    makine->setDurum(new AC());
     delete this;
 }
 
