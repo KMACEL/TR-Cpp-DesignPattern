@@ -6,84 +6,93 @@
 // Açıklama    : Chain of Responsibility
 //============================================================================
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-class Handler
+class TrafikKurallari
 {
 protected:
-  Handler *next;
+  TrafikKurallari *trafikKurallari;
 
 public:
-  Handler()
+  TrafikKurallari()
   {
-    next = NULL;
+    trafikKurallari = NULL;
   }
 
-  virtual ~Handler() {}
+  virtual ~TrafikKurallari() {}
 
   virtual void sorgula(int value) = 0;
 
-  void setHandlerGecis(Handler *nextInLine)
+  void setKuralDegistir(TrafikKurallari *yolTipi)
   {
-    next = nextInLine;
+    trafikKurallari = yolTipi;
   }
 };
 
-class SpecialHandler : public Handler
+class Yol : public TrafikKurallari
 {
 private:
-  int myLimit;
-  int myId;
+  int hizLimiti;
+  string yolTipi;
 
 public:
-  SpecialHandler(int limit, int id)
+  Yol(string yolTipi, int hizLimiti)
   {
-    myLimit = limit;
-    myId = id;
+    this->hizLimiti = hizLimiti;
+    this->yolTipi = yolTipi;
   }
 
-  ~SpecialHandler() {}
+  ~Yol() {}
 
-  void sorgula(int value) override
+  void sorgula(int yapilanHiz) override
   {
-    if (value < myLimit)
+    if (yapilanHiz < hizLimiti)
     {
-      cout << "Handler ID : " << myId << ", Handler Limiti : " << myLimit << " Girdiğiniz değer : " << value << ". Değer uygun." << endl;
+      cout << "--------------------------------------------------" << endl;
+      cout << "Yol Tipi : " << yolTipi << endl
+           << "Hız Limiti : " << hizLimiti << endl
+           << "Yapılan Hız : " << yapilanHiz << endl
+           << "Sonuç : Ceza Almadınız." << endl;
     }
-    else if (next != NULL)
+    else if (trafikKurallari != NULL)
     {
-      next->sorgula(value);
+      trafikKurallari->sorgula(yapilanHiz);
     }
     else
     {
-      cout << "Limit aşımı : (" << myId << "), Girdiğiniz değer " << value << ". Lütfen " << myLimit << " limitinde kalınız." << endl;
+      cout << "--------------------------------------------------" << endl;
+      cout << "Dikkat !!! Hız Limit Aşımı" << endl
+           << "Yol Tipi : " << yolTipi << endl
+           << "Yapılan Hız " << yapilanHiz << endl
+           << "Bu Yolda Limit : " << hizLimiti << endl
+           << "Lütfen Limitte Kalınız." << endl;
     }
   }
-
 };
 
 int main()
 {
-  Handler *h1 = new SpecialHandler(10, 1);
-  Handler *h2 = new SpecialHandler(20, 2);
-  Handler *h3 = new SpecialHandler(30, 3);
+  TrafikKurallari *ulke1 = new Yol("Tek Şerit", 100);
+  TrafikKurallari *ulke2 = new Yol("Çift Şerit", 120);
+  TrafikKurallari *ulke3 = new Yol("Otoban", 150);
 
-  h1->sorgula(9);
-  h1->sorgula(11);
+  ulke1->sorgula(80);
+  ulke1->sorgula(115);
 
-  h1->setHandlerGecis(h2);
-  h1->sorgula(18);
-  h1->sorgula(40);
+  ulke1->setKuralDegistir(ulke2);
+  ulke1->sorgula(90);
+  ulke1->sorgula(115);
 
-  h2->sorgula(19);
-  h2->sorgula(25);
-  h2->setHandlerGecis(h3);
-  h2->sorgula(25);
+  ulke2->sorgula(85);
+  ulke2->sorgula(130);
+  ulke2->setKuralDegistir(ulke3);
+  ulke2->sorgula(140);
 
-  delete h1;
-  delete h2;
-  delete h3;
+  delete ulke1;
+  delete ulke2;
+  delete ulke3;
 
   return 0;
 }
