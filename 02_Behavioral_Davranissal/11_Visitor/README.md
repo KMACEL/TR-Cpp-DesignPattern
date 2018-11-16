@@ -1,22 +1,20 @@
-//============================================================================
-// İsim        : 11_Visitor
-// Yazan       : Mert AceL
-// Version     : 1.0
-// Copyright   : AceL
-// Açıklama    : Visitor Pattern
-//============================================================================
-#include <string>
-#include <iostream>
-#include <vector>
+# Visitor Pattern 
 
-using namespace std;
+**"Visitor Pattern"**, üzerinde çalıştığı öğelerin sınıflarını değiştirmeden yeni bir işlem tanımlamanıza izin vererek bir nesne yapısının öğeleri üzerinde gerçekleştirilecek bir işlemi temsil edecektir.
 
+## Visitor Pattern Kullanım Adımları
+
+* İlk önce projede kullancağımız sınıfların şablonlarını tanımlıyoruz.
+```cpp
 class Tekerlek;
 class Motor;
 class Govde;
 class Araba;
+```
 
-// Araba Birleşenleri Soyut Sınıf
+* Ardından **"ArabaBirlesenleriVisitor"** isminde soyut bir sınıf belirliyoruz. Bu sınıf içinde, bütün birleşenleri ekliyoruz.
+
+```cpp
 class ArabaBirlesenleriVisitor
 {
   public:
@@ -25,21 +23,28 @@ class ArabaBirlesenleriVisitor
     virtual void visit(Govde &govde) const = 0;
     virtual void visitAraba(Araba &car) const = 0;
 };
+```
 
-// ArabaBirlesenleri Yapım
+* Sonra **"ArabaBirlesenleri"** isminde bir soyut sınıf oluşturuyoruz. Bu sınıfta **"onayla"** ismind ebir method bulunmakta. 
+
+```cpp
 class ArabaBirlesenleri
 {
   public:
     virtual void onayla(const ArabaBirlesenleriVisitor &visitor) = 0;
 };
+```
 
+* Sonraki adım olarak birleşenleri somutlaştırıyoruz. Bizim arabamızın birleşenleri **"Tekerlek"**, **"Motor"**, **"Govde"** den oluşuyor. Bunun içinde ayrı ayrı tanımlamalar yapıyoruz. Bu sınıfları oluştururken **"ArabaBirlesenleri"** sınıfından miras alıyoruz. Burada dikkat edişmesi gereken husus **"onayla"** methodu. Bütün ontayla methodları içinde **"visitor.visit(*this);"** kodu bulunmakta. 
+
+```cpp
 class Tekerlek : public ArabaBirlesenleri
 {
   private:
     string isim;
 
   public:
-    explicit Tekerlek(const string &isim) : isim(isim)
+    Tekerlek(const string &isim) : isim(isim)
     {
     }
 
@@ -71,7 +76,11 @@ class Govde : public ArabaBirlesenleri
         visitor.visit(*this);
     }
 };
+```
 
+* Ardından arabımızı oluşturmak için **"Araba"** sınıfımızı oluşturuyoruz. Bu sınıfta bir adet **"vector"** bulunmakta. Bu vektör, bizim birleşenlerimizi barındırıyor. Constructor yardımı ile bütün birleşenleri ekliyoruz.
+
+```cpp
 class Araba
 {
   private:
@@ -100,8 +109,11 @@ class Araba
         }
     }
 };
+```
 
+* Ardından **"ArabaBirlesenleriVisitor"** sınıfından miras alan **"ArabaBirlesemleriYazdirVisitor"** sınıfını oluşturuyrouz. Bu sınıf, bize tek tek bütün birleşenler için **"visit"** methodunu tanımlıyor.
 
+```cpp
 class ArabaBirlesemleriYazdirVisitor : public ArabaBirlesenleriVisitor
 {
   public:
@@ -130,7 +142,11 @@ class ArabaBirlesemleriYazdirVisitor : public ArabaBirlesenleriVisitor
         cout << "Visited araba" << endl;
     }
 };
+```
 
+* Son olarak yine **"ArabaBirlesenleriVisitor"** sınıfından miras alan **"ArabaBirlesemleriYapVisitor"** isminde bir sınıf oluşturuyoruz. Bu sınıf, artık araba montaj işlemini gerçekleştiriyor.
+
+```cpp
 class ArabaBirlesemleriYapVisitor : public ArabaBirlesenleriVisitor
 {
   public:
@@ -159,7 +175,11 @@ class ArabaBirlesemleriYapVisitor : public ArabaBirlesenleriVisitor
         cout << "Araba yapımı bitti." << endl;
     }
 };
+```
 
+* Kullanmak için bir **"Araba"** nesnesi üretiyoruz. Ardından  **"ArabaBirlesemleriYazdirVisitor"** ve **"ArabaBirlesemleriYapVisitor"** nesneleri üretiyoruz. ardından  **"visitAraba"** methodu ile, farklı işler yaptırabiliyoruz.
+
+```cpp
 int main()
 {
     Araba araba;
@@ -171,3 +191,4 @@ int main()
 
     return 0;
 }
+```
