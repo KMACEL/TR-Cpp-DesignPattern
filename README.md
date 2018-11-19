@@ -19,7 +19,7 @@ Bu tasarım desenlerinin çoğu, özellikle nesneler arasındaki iletişim ile i
 
 * ✓✓ **Chain of Responsibility** delegates commands to a chain of processing objects.
 * ✓✓ **Command** creates objects which encapsulate actions and parameters.
-* ✓ **Interpreter** implements a specialized language.
+* ✓✓ **Interpreter** implements a specialized language.
 * ✓ **Iterator** accesses the elements of an object sequentially without exposing its underlying representation.
 * **Mediator** allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
 * **Memento** provides the ability to restore an object to its previous state (undo).
