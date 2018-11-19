@@ -1,15 +1,14 @@
-//============================================================================
-// İsim        : 03_Interpreter
-// Yazan       : Mert AceL
-// Version     : 1.0
-// Copyright   : AceL
-// Açıklama    : Interpreter Pattern
-//============================================================================
-#include <iostream>
-#include <cstring>
+# Interpreter Pattern
 
-using namespace std;
+**"Interpreter Pattern"**, özellikle dil işleme gibi durumlarda oldukça tercih edilen bir türdür. 
 
+## Interpreter Pattern Kullanım Adımları
+
+Biz örneğimizde, girilen bir **"ROMA Rakamının"** karşılığını veren programı yazacağız.
+
+* İlk adım olarak **"RomaRakamInterpreter"** isminde bir sınıf oluşturuyoryuz. Bu sınıfta **"private"** erişim hakkında ve **"RomaRakamInterpreter"** türünde  **"binler"**, **"yuzler"**, **"onlar"**, **"birler"** isminde nesneler oluşturuyoruz. Ardından **"protected"** türünde geri **"char"** tipinde değer döndüren **"bir"**, **"dort"**, **"bes"**, **"dokuz"** ve int tipinde **"carpan"** isminde methodlar tanımlıyoruz. Bu methodlar, romen rakamlarında etkileşime giren rakamlardır. Çarpanda, hangi basamak olduğunu belli eder. Dikkat edilmesi gereken husus, bu methodlar **"virtual"** yani soyuttur. Ardından  **"public"** erişim hakkında bazı işlemlerimiz bulunmakta. İlk olarak Constructorlar tanımlıyoruz ardından **"interpret"** tanımlıyoruz. En son bunların anlatımını gerçekleştireceğiz. Sonra, geri değer döndürmeyen ve sanal olan bir **"interpret"** methodu daha tanımlıyoruz.  Bu fonsiyon bizim için çok önemli çünkü bütün hesapalama burada gerçekleşmektedir. Dikkat ederseniz, **"virtual"** olarak tanımlanmış. Bu sayede, alt sınıflardan gelen verinin,  değer ve basamağına göre işlem yapmakta.
+
+```cpp
 class RomaRakamInterpreter
 {
 private:
@@ -29,7 +28,7 @@ public:
   RomaRakamInterpreter();
   RomaRakamInterpreter(int) {}
   int interpret(char *);
-
+  
   virtual void interpret(char *input, int &total)
   {
     int index;
@@ -62,7 +61,11 @@ public:
     strcpy(input, &(input[index]));
   }
 };
+```
 
+* Şimdiki adım olarak oluşturduğumuz **"RomaRakamInterpreter"** sınıfından miras alan **"Binler"**, **"Yuzler"**, **"Onlar"**, **"Birler"** sınıflarını oluşturuyoruz. bu sınıflar hemen hemen aynıdır, farkları ise, ilgili basamakta döndürülen işaret. Mesela **"Binler"** sınıfında **"bir()"** methodu geriye **"M"** döndürürken, **Onlar"** sınıfı **"bir()"** methodu geriye **"X"** değeri döndürmektedir.  
+
+```cpp
 class Binler : public RomaRakamInterpreter
 {
 public:
@@ -174,7 +177,11 @@ protected:
     return 1;
   }
 };
+```
 
+* **"RomaRakamInterpreter"** constructorda değişkenlere atama gerçekleştiriyoruz. Ardından **"interpret"** methodunun tanımlamasını gerçekleştiriyoruz. Bu method, kullanıcıdan aldığı değeri, constructorda oluşturduğu sınıflara tek tek gönderip işlenmesini sağlıyor.
+
+```cpp
 RomaRakamInterpreter::RomaRakamInterpreter()
 {
   binler = new Binler(1);
@@ -199,7 +206,11 @@ int RomaRakamInterpreter::interpret(char *input)
 
   return total;
 }
+```
 
+* Kullanım için ise, **"RomaRakamInterpreter"** sınıfından bir nesne oluşturuyoruz. Ardından, **"interpreter.interpret(input) "** kodu ile, biz durdurana kadar dönüştürme işlemine devam ediyor. 
+
+```cpp
 int main()
 {
   RomaRakamInterpreter interpreter;
@@ -211,3 +222,4 @@ int main()
     cout << "Roma rakamı giriniz : ";
   }
 }
+```
