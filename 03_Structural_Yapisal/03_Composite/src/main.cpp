@@ -15,7 +15,6 @@ class Grafik
 {
   public:
     virtual void yazdir() const = 0;
-    virtual ~Grafik() {}
 };
 
 class Elips : public Grafik
@@ -24,6 +23,24 @@ class Elips : public Grafik
     void yazdir() const override
     {
         cout << "Elips \n";
+    }
+};
+
+class Kare : public Grafik
+{
+  public:
+    void yazdir() const override
+    {
+        cout << "Kare \n";
+    }
+};
+
+class Ucgen : public Grafik
+{
+  public:
+    void yazdir() const override
+    {
+        cout << "Üçgen \n";
     }
 };
 
@@ -50,22 +67,22 @@ class CompositeGrafik : public Grafik
 int main()
 {
     // Initialize four ellipses
-    const auto_ptr<Elips> elips1(new Elips());
-    const auto_ptr<Elips> elips2(new Elips());
-    const auto_ptr<Elips> elips3(new Elips());
-    const auto_ptr<Elips> elips4(new Elips());
+    const unique_ptr<Elips> elips1(new Elips());
+    const unique_ptr<Elips> elips2(new Elips());
+    const unique_ptr<Kare> kare(new Kare());
+    const unique_ptr<Ucgen> ucgen(new Ucgen());
 
     // Initialize three composite graphics
-    const auto_ptr<CompositeGrafik> graphic1(new CompositeGrafik());
-    const auto_ptr<CompositeGrafik> graphic2(new CompositeGrafik());
-    const auto_ptr<CompositeGrafik> graphic3(new CompositeGrafik());
+    const unique_ptr<CompositeGrafik> graphic1(new CompositeGrafik());
+    const unique_ptr<CompositeGrafik> graphic2(new CompositeGrafik());
+    const unique_ptr<CompositeGrafik> graphic3(new CompositeGrafik());
 
     // Composes the graphics
     graphic2->ekle(elips1.get());
     graphic2->ekle(elips2.get());
-    graphic2->ekle(elips3.get());
+    graphic2->ekle(ucgen.get());
 
-    graphic3->ekle(elips4.get());
+    graphic3->ekle(kare.get());
 
     graphic1->ekle(graphic2.get());
     graphic1->ekle(graphic3.get());

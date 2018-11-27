@@ -34,7 +34,7 @@ These concern class and object composition. They use inheritance to compose inte
 
 * ✓✓ **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
 * ✓✓ **Bridge** decouples an abstraction from its implementation so that the two can vary independently.
-* ✓ **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
+* ✓✓ **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
 * ✓✓ **Decorator** dynamically adds/overrides behaviour in an existing method of an object.
 * ✓✓ **Facade** provides a simplified interface to a large body of code.
 * **Flyweight** reduces the cost of creating and manipulating a large number of similar objects.
