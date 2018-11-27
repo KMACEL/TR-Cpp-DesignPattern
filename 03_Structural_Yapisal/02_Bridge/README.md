@@ -1,22 +1,22 @@
-//============================================================================
-// İsim        : 02_Bridge
-// Yazan       : Mert AceL
-// Version     : 1.0
-// Copyright   : AceL
-// Açıklama    : Bridge Pattern
-//============================================================================
-#include <iostream>
+# Bridge Pattern
 
-using namespace std;
+**"Bridge Pattern"**, arabirimi uygulanmasından ayırmak için kullanılır. Bunu yapmak esneklik sağlar, böylece her ikisi de bağımsız olarak değişebilir.
 
-/* Uygulatıcı*/
+## Bridge Pattern Kullanım Adımları
+
+* İlk olarak, **"CizimAPISablon"** isminde bir soyut sınıf tanımlıyoruz.
+
+```cpp
 class CizimAPISablon
 {
   public:
     virtual void cemberCiz(double x, double y, double yaricap) = 0;
 };
+```
 
-/* Somut Uygulatıcı A*/
+* Ardından bu sınıftan miras alan **"CizimAPI1"**, **"CizimAPI2"** sınıflarını oluşturuyoruz. Bu sınıflar, **"cemberCiz"** methodunu kendine göre yorumlamaya olanak sağlamaktadır.
+
+```cpp
 class CizimAPI1 : public CizimAPISablon
 {
   public:
@@ -26,7 +26,6 @@ class CizimAPI1 : public CizimAPISablon
     }
 };
 
-/* Somut Uygulatıcı B*/
 class CizimAPI2 : public CizimAPISablon
 {
   public:
@@ -35,16 +34,22 @@ class CizimAPI2 : public CizimAPISablon
         cout << "CizimAPI2 Verileri x:  " << x << " y :" << y << " yarı çap : " << yaricap << endl;
     }
 };
+```
 
-/* Soyutlama*/
+* Ardından **"Sekil"** isminde soyut bir sınıf oluşturyoruz. Bu sınıf, **"ciz"** ve **"boyutArttir"** isminde iki methodu bulunmakta.
+
+```cpp
 class Sekil
 {
   public:
     virtual void ciz() = 0;
     virtual void boyutArttir(double boyutlandir) = 0;
 };
+```
 
-/* Soyut İşleme*/
+* Son olarak **"Sekil"** sınıfından türetilen **"DaireSekil"** için gerekli sınıfı hazırlıyoruz. Bu sınıf constructor ile verileri almakta. Ardından soyut sınıftan gelen methodlar ile işlemlerimizi gerçekleştiriyoruz.
+
+```cpp
 class DaireSekil : public Sekil
 {
   private:
@@ -64,7 +69,11 @@ class DaireSekil : public Sekil
         yaricap *= boyutlandir;
     }
 };
+```
 
+* Kullanım oldukça kolaydır. İlk olarak **"DaireSekil"** sınıfından nesne üretiyoruz. Nesne üretirken **"x"**, **"y"**, **"yarıçap"** ve **"CizimAPI"** türünde nesne veriyoruz. Ardından **"boyutArttir"** ve **"ciz"** methodlarını, verdiğimiz **""CizimAPI"** türünde işlemler etabi tutmuş oluyoruz. 
+
+```cpp
 int main()
 {
     DaireSekil daire1(1, 2, 3, new CizimAPI1());
@@ -75,3 +84,4 @@ int main()
     daire2.ciz();
     return 0;
 }
+```
